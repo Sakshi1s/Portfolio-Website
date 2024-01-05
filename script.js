@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
       icon.addEventListener('mouseout', removeHoverAnimation);
     }
   
-    // Form submission handling
     const contactForm = document.forms['myform'];
     if (contactForm) {
       contactForm.addEventListener('submit', handleFormSubmission);
@@ -37,11 +36,5 @@ document.addEventListener('DOMContentLoaded', function () {
   
   function removeHoverAnimation() {
     this.classList.remove('hovered');
-  }
-  
-  function handleFormSubmission(e) {
-    e.preventDefault();
-    // You can add your form submission logic here
-    alert('Form submitted!'); // Placeholder, replace with your actual form submission code
   }
   
